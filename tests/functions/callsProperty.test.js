@@ -12,3 +12,15 @@ test('functions.callsProperty accepts a parameter `obj` and calls obj.increment(
   functions.callsProperty(actual)
   expect(actual.n).toBe(expected)
 })
+
+test('functions.callsProperty accepts a parameter `obj` and calls obj.increment() (once)', function () {
+  const expected = 1
+  const actual = {
+    n: 0,
+    increment: function () {
+      this.n++
+    }
+  }
+  functions.callsPropertyB(actual)
+  expect(actual.n).toBe(expected)
+})
