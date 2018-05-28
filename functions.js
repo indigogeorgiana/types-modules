@@ -13,6 +13,10 @@ module.exports = {
 
   find: function (arr, fn) {
     return arr.find(fn)
+  },
+
+  map: function (arr, fn) {
+    return arr.map(fn)
   }
 }
 
