@@ -1,7 +1,8 @@
 module.exports = {
 
   getBoolean,
-  getFunction: getFunction
+  getFunction: getFunction,
+  getNull: getNull
 }
 
 function getBoolean () {
@@ -11,3 +12,8 @@ function getBoolean () {
 function getFunction () {
   return getBoolean
 }
+
+function getNull () {
+  return null
+}
+
