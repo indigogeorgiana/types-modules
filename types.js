@@ -4,7 +4,8 @@ module.exports = {
   getFunction: getFunction,
   getNull: getNull,
   getNumber: getNumber,
-  getObject: getObject
+  getObject: getObject,
+  getString: getString
 }
 
 function getBoolean () {
@@ -25,4 +26,8 @@ function getNumber () {
 
 function getObject () {
   return {}
+}
+
+function getString () {
+  return "I am Foo"
 }
