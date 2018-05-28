@@ -29,5 +29,5 @@ function getObject () {
 }
 
 function getString () {
-  return "I am Foo"
+  return 'I am Foo'
 }
