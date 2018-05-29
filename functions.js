@@ -1,22 +1,28 @@
 module.exports = {
-  callsFunction: function (fn) {
-    fn()
-  },
+  callsFunction: callsFunction,
+  callsProperty: callsProperty,
+  filter: filter,
+  find: find,
+  map: map
+}
 
-  callsProperty: function (obj) {
-    obj.increment()
-  },
+function callsFunction (fn) {
+  fn()
+}
 
-  filter: function (arr, fn) {
-   return arr.filter(fn) 
-  },
+function callsProperty (obj) {
+  obj.increment()
+}
 
-  find: function (arr, fn) {
-    return arr.find(fn)
-  },
+function filter (arr, fn) {
+ return arr.filter(fn) 
+}
 
-  map: function (arr, fn) {
-    return arr.map(fn)
-  }
+function find (arr, fn) {
+  return arr.find(fn)
+}
+
+function map (arr, fn) {
+  return arr.map(fn)
 }
 
