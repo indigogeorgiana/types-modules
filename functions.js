@@ -1,7 +1,8 @@
 module.exports = {
   callsFunction: callsFunction,
   callsProperty: callsProperty,
-  callsPropertyB: callsPropertyB
+  callsPropertyB: callsPropertyB,
+  filter: filter
 }
 
 function callsFunction (increment) {
@@ -14,4 +15,9 @@ function callsProperty (obj) {
 
 function callsPropertyB (obj) {
   return obj.increment()
+}
+
+function filter (arr, fn) {
+  const result = arr.filter(fn)
+  return result
 }
